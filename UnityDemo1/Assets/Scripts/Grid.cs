@@ -87,8 +87,13 @@ namespace UnityDemo1
 
         private Vector3 CalculateCellPosition(Bounds area, Vector2Int cellCoordinates, Vector3 cellDimensions)
         {
-            return area.min + new Vector3(cellCoordinates.y * cellDimensions.x, 0.0f, cellCoordinates.x * cellDimensions.y) + new Vector3(cellDimensions.x, 0.0f, cellDimensions.y) * 0.5f;
+            return area.min + new Vector3(cellCoordinates.x * cellDimensions.x, 0.0f, cellCoordinates.y * cellDimensions.z) + new Vector3(cellDimensions.x, 0.0f, cellDimensions.z) * 0.5f;
         }
+
+        //private Vector3 CalculateCellPosition(int x, int y, float cellWidth, float cellHeight)
+        //{
+        //    return m_Bounds.min + new Vector3(y * cellWidth, 0.0f, x * cellHeight) + new Vector3(cellWidth, 0.0f, cellHeight) * 0.5f;
+        //}
     }
 }
 

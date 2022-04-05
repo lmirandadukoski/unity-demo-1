@@ -9,7 +9,7 @@ namespace UnityDemo1
         [SerializeField] private LevelData _Data;
         [SerializeField] private Collider _GroundCollider;
 
-        private Grid<int> _CurrentGrid;
+        [SerializeField] private Grid<int> _CurrentGrid;
 
         private void Start()
         {
