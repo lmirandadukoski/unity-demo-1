@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: 0_LevelData
   m_EditorClassIdentifier: 
   _Index: 0
+  _LevelLayout: {fileID: 21300000, guid: 825d48922ce75424fb3e932292717290, type: 3}
   _Layout:
-    _Dimensions: {x: 1, y: 2}
+    _Dimensions: {x: 10, y: 3}
     _Cells:
     - _Coordinates: {x: 0, y: 0}
     - _Coordinates: {x: 0, y: 0}

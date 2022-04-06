@@ -8,10 +8,10 @@ namespace UnityDemo1
     public class LevelData : ScriptableObject
     {
         public long Index { get => _Index; }
-        public Grid<int> Layout { get => _Layout; }
+        public Texture2D LevelLayout { get => _LevelLayout; }
 
         [SerializeField, Min(0)] private long _Index;
-        [SerializeField] private Grid<int> _Layout;
+        [SerializeField] private Texture2D _LevelLayout;
     }
 }
 
