@@ -23,8 +23,6 @@ namespace UnityDemo1
 
         private void OnDrawGizmos()
         {
-            Gizmos.DrawSphere(Camera.main.ScreenToWorldPoint(Vector3.zero), 1f);
-
             if(_CurrentGrid != null)
             {
                 if(_CurrentGrid.Cells != null)
@@ -67,8 +65,7 @@ namespace UnityDemo1
                     {
                         Color cellColour = _Data.LevelLayout.GetPixel(x, y);
                         cellValidityValues[x, y] = IsValidCell(cellColour);
-
-                        Debug.Log(string.Format("x{0}, y{1} = {2} {3}", x, y, cellColour, cellValidityValues[x, y]));
+                        //Debug.Log(string.Format("x{0}, y{1} = {2} {3}", x, y, cellColour, cellValidityValues[x, y]));
                     }
                 }
 

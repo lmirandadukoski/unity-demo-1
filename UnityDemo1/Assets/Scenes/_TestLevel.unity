@@ -169,6 +169,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Data: {fileID: 11400000, guid: 6ab4b29142468d045b2570a081e25ada, type: 2}
   _GroundCollider: {fileID: 846884451}
+  _CurrentGrid:
+    _Dimensions: {x: 0, y: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
